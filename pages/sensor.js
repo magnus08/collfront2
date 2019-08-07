@@ -15,6 +15,7 @@ Sensor.getInitialProps = async function() {
   const res = await fetch(sensorOne());
   console.log("Res: ", res);
   const data = await res.json();
+  console.log("data: ", data);
   return {data: "hello"};
 };
 
