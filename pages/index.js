@@ -6,7 +6,6 @@ const Index = () => (
   <div>
     <CollLayout>
       <p>Hello Next.js</p>
-      <Link href="/about"><a>About</a></Link>
     </CollLayout>
   </div>
 );
