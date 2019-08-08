@@ -26,7 +26,7 @@ app.prepare()
     return handle(req, res)
   });
 
-  server.listen(32147, "noll.no-ip.info", (err) => {
+  server.listen(32147, "127.0.0.1", (err) => {
     if(err)  {
       throw err;
     }
