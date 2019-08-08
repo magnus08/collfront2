@@ -1,7 +1,7 @@
 import React from 'react';
 import {CollLayout} from '../components/CollLayout';
 import fetch from 'isomorphic-unfetch';
-import {sensorOne} from '../fetch/urls';
+import {sensorOneLocal} from '../fetch/urls';
 
 const Sensor = () => (
   <div>
@@ -12,7 +12,8 @@ const Sensor = () => (
 );
 
 Sensor.getInitialProps = async function() {
-  const res = await fetch(sensorOne());
+  console.log("sensor start fetching");
+  const res = await fetch(sensorOneLocal());
   console.log("Res: ", res);
   const data = await res.json();
   console.log("data: ", data);
